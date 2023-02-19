@@ -1,0 +1,69 @@
+#navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: crimson;
+}
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 900px;
+}
+.home {
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 20px;
+}
+.myprofile {
+    align-self: center;
+    margin-right: 20px;
+}
+.portfolio {
+    align-self: center;
+    margin-right: 20px;
+}
+.messageus {
+    align-self: center;
+    justify-self: right;
+}
+
+#headquarter {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.jakarta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+.jakarta > img {
+    border-radius: 50%;
+}
+.bandung {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.bandung > img {
+    border-radius: 50%;
+}
+.surabaya {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+.surabaya > img {
+    border-radius: 50%;
+}
