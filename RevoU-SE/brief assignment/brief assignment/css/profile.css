@@ -1,0 +1,57 @@
+/* NavBar */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: crimson;
+}
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 900px;
+}
+.home {
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 20px;
+}
+.myprofile {
+    align-self: center;
+    margin-right: 20px;
+}
+.portfolio {
+    align-self: center;
+    margin-right: 20px;
+}
+.messageus {
+    align-self: center;
+    justify-self: right;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin:auto;
+}
+
+/* About Us */
+#about {
+    margin-top: 20px;
+}
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-title {
+    font-size: 30px;
+    font-weight: 500;
+}
+.about-subtitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.about-image {
+    width: 400px;
+    height: auto;
+}
