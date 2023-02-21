@@ -12,29 +12,69 @@
     width: 80px;
     height: 100%;
     margin-right: auto;
+    background-color: crimson;
+}
+.logo-link-img {
+    width: 100px;
+    height: 100%;
 }
 .home {
     align-self: center;
     justify-self: flex-end;
     margin-right: 20px;
     background-color: antiquewhite;
-    padding: 10px;
     border: maroon solid 4px;
+}
+.home > a:link, .home > a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid maroon;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.home > a:hover, .home > a:active {
+    background-color: maroon;
+    color: white;
 }
 .myprofile {
     align-self: center;
     margin-right: 20px;
     background-color: antiquewhite;
     border: maroon solid 4px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+}
+.myprofile > a:link, .myprofile > a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid maroon;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.myprofile > a:hover, .myprofile > a:active {
+    background-color: maroon;
+    color: white;
 }
 .portfolio {
     align-self: center;
     margin-right: 20px;
     background-color: antiquewhite;
-    padding: 10px;
     border: maroon solid 4px;
+}
+.portfolio > a:link, .portfolio > a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid maroon;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.portfolio > a:hover, .portfolio > a:active {
+    background-color: maroon;
+    color: white;
 }
 .messageus {
     align-self: center;
@@ -42,8 +82,19 @@
     margin-right: 20px;
     background-color: antiquewhite;
     border: maroon solid 4px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+}
+.messageus > a:link, .messageus > a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid maroon;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.messageus > a:hover, .messageus > a:active {
+    background-color: maroon;
+    color: white;
 }
 
 /* MainContent */
@@ -129,11 +180,9 @@ main > hr {
 }
 
 /* Footer */
-.container {
-    background-color: lightgoldenrodyellow;
-}
 .footer {
     display: flex;
+    background-color: lightgoldenrodyellow;
 }
 .footer-copyright {
     margin-inline-end: auto;
