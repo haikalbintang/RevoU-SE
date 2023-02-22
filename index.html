@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="/RevoU-SE/brief assignment/css/index.css">
     </head>
     <body>
-        <link rel="stylesheet" href="/RevoU-SE/brief assignment/css/index.css">
+         <link rel="stylesheet" href="/RevoU-SE/brief assignment/css/index.css">
         <!--header/navbar-->
         <header>
             <nav id="navbar">
@@ -21,12 +21,28 @@
         <!--main content-->        
         <main>
             <section id="hero">
-                <h1>Hello Revoneers, Welcome To My RevoU Website!</h1>
+                <h1>Hello <span id="hero-name"><button onclick="myFunction()">Revoneers</button></span>, Welcome To My RevoU Website!</h1>
                 <div class="hero-paragraph">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum molestiae veniam unde quam quia ipsam commodi suscipit labore perspiciatis accusantium minima, optio natus, in omnis libero iste tempore nobis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non fugiat unde enim repellendus natus at, quis ducimus alias, debitis pariatur dolorum earum vitae eaque impedit obcaecati quia asperiores veritatis tempore.</p>
                 </div>
-                <div class="hero-img"><img src="http://placekitten.com/500/500" alt="CutiePaw"></div>
+                <div class="hero-img"><img src="http://placekitten.com/1080/400" alt="CutiePaw"></div>
+                <div class="hero-img"><img src="http://placekitten.com/800/400" alt="CutiePaw"></div>
+                <div class="hero-img"><img src="http://placekitten.com/400/400" alt="CutiePaw"></div>
             </section>
+
+            <script>
+            function myFunction() {
+              let text;
+              let person = prompt("Please enter your name:", "Revoneers");
+              if (person == null || person == "") {
+                text = "Anon";
+              } else {
+                text = person;
+              }
+              document.getElementById("hero-name").innerHTML = text;
+            }
+            </script>
+            
             <hr>
             <section id="headquarters">
                 <h3>Our Headquarters</h3>
@@ -54,6 +70,52 @@
         <!-- messageus -->
         <messageus id="messageus">
             <h3>Message Us</h3>
+            <form name="messageus-form" onsubmit="return validateForm()">
+                Nama: <input placeholder="Nama" type="text" name="full-name">
+                <br>
+                Tanggal Lahir: <input type="date" name="birth-date">
+                <br>
+                Jenis Kelamin:
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Laki-Laki</label>  
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Perempuan</label>
+                <br>
+                Pesan:
+                <input placeholder="Pesan" type="text" name="messages">
+                <br>
+                <input type="submit" value="submit">
+            </form>
+            <div>
+                <p>Nama: <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>Pesan: <span id="sender-messages"></span></p>
+                <input type="submit" value="show">
+            </div>
+            <script>
+                function validateForm() {
+                    const name = document.forms["messageus-form"]["full-name"].value;
+                    const birthDate = document.forms["messageus-form"]["birth-date"].value;
+                    const gender = document.forms["messageus-form"]["gender"].value;
+                    const messages = document.forms["messageus-form"]["messages"].value;
+
+                    if (name == "" || birthDate == "" || gender == "" || messages == "") {
+                        alert("Isi semua dong Bang");
+                        return false;
+                    }
+                    setSenderUI(name, birthDate, gender, messages)
+                    return false; 
+                }
+                function setSenderUI() {
+                    document.getElementById("sender-full-name").innerHTML = name;
+                    document.getElementById("sender-birth-date").innerHTML = birthDate;
+                    document.getElementById("sender-gender").innerHTML = gender;
+                    document.getElementById("sender-messages").innerHTML = messages;
+                    return;
+                }
+            </script>
+            
         </messageus>
         <hr class="messageus-ruler">
 

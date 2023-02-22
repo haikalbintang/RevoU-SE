@@ -44,16 +44,15 @@
     background-color: antiquewhite;
     border: maroon solid 4px;
 }
-.myprofile > a:link, .myprofile > a:visited {
+.myprofile > a:link {
     background-color: white;
     color: black;
-    border: 2px solid maroon;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
 }
-.myprofile > a:hover, .myprofile > a:active {
+.myprofile > a:visited, .myprofile > a:hover, .myprofile > a:active {
     background-color: maroon;
     color: white;
 }
