@@ -1,0 +1,327 @@
+/* NavBar */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: crimson;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.logo {
+    width: 80px;
+    height: 100%;
+    margin-right: auto;
+    background-color: crimson;
+}
+.logo-link-img {
+    width: 100px;
+    height: 100%;
+}
+.home {
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 20px;
+    background-color: antiquewhite;
+    border: maroon solid 4px;
+}
+.home > a:link, .home > a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid maroon;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.home > a:hover, .home > a:active {
+    background-color: maroon;
+    color: white;
+}
+.myprofile {
+    align-self: center;
+    margin-right: 20px;
+    background-color: antiquewhite;
+    border: maroon solid 4px;
+}
+.myprofile > a:link {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.myprofile > a:visited, .myprofile > a:hover, .myprofile > a:active {
+    background-color: maroon;
+    color: white;
+}
+.portfolio {
+    align-self: center;
+    margin-right: 20px;
+    background-color: antiquewhite;
+    border: maroon solid 4px;
+}
+.portfolio > a:link, .portfolio > a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid maroon;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.portfolio > a:hover, .portfolio > a:active {
+    background-color: maroon;
+    color: white;
+}
+.messageus {
+    align-self: center;
+    justify-self: right;
+    margin-right: 20px;
+    background-color: antiquewhite;
+    border: maroon solid 4px;
+}
+.messageus > a:link, .messageus > a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid maroon;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.messageus > a:hover, .messageus > a:active {
+    background-color: maroon;
+    color: white;
+}
+
+/* MainContent */
+main {
+    margin-top: 120px;
+}
+#about {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-title {
+    text-align: center;
+}
+.about-subtitle {
+    text-align: center;
+}
+.about-image {
+    width: 400px;
+    height: auto;
+}
+
+/* MyJourney */
+.myjourney-title {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}   
+.pm {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.pm-p {
+    flex-direction: column;
+    margin-left: 20px;
+    text-align: right;
+    padding-top: 80px;
+}
+.se {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.se-p {
+    flex-direction: column;
+    margin-right: 20px;
+    padding-top: 80px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    background-color: lightgoldenrodyellow;
+}
+.footer-copyright {
+    margin-inline-end: auto;
+}
+.footer-paragraph {
+    margin-right: 10px;
+    justify-self: right;
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* NavBar */
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: crimson;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .logo {
+        width: 80px;
+        height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: crimson;
+    }
+    .logo-link-img {
+        width: 100px;
+        height: 100%;
+    }
+    .home {
+        align-self: center;
+        justify-self: flex-end;
+        margin-right: 20px;
+        background-color: antiquewhite;
+        border: maroon solid 4px;
+    }
+    .home > a:link, .home > a:visited {
+        background-color: white;
+        color: black;
+        border: 2px solid maroon;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .home > a:hover, .home > a:active {
+        background-color: maroon;
+        color: white;
+    }
+    .myprofile {
+        align-self: center;
+        margin-right: 20px;
+        background-color: antiquewhite;
+        border: maroon solid 4px;
+    }
+    .myprofile > a:link {
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .myprofile > a:visited, .myprofile > a:hover, .myprofile > a:active {
+        background-color: maroon;
+        color: white;
+    }
+    .portfolio {
+        align-self: center;
+        margin-right: 20px;
+        background-color: antiquewhite;
+        border: maroon solid 4px;
+    }
+    .portfolio > a:link, .portfolio > a:visited {
+        background-color: white;
+        color: black;
+        border: 2px solid maroon;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .portfolio > a:hover, .portfolio > a:active {
+        background-color: maroon;
+        color: white;
+    }
+    .messageus {
+        align-self: center;
+        justify-self: right;
+        margin-right: 20px;
+        background-color: antiquewhite;
+        border: maroon solid 4px;
+    }
+    .messageus > a:link, .messageus > a:visited {
+        background-color: white;
+        color: black;
+        border: 2px solid maroon;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .messageus > a:hover, .messageus > a:active {
+        background-color: maroon;
+        color: white;
+    }
+
+    /* MainContent */
+    main {
+        margin-top: 300px;
+    }
+    #about {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-title {
+        text-align: center;
+    }
+    .about-subtitle {
+        text-align: center;
+    }
+    .about-image {
+        width: 400px;
+        height: auto;
+    }
+
+    /* MyJourney */
+    .myjourney-title {
+        text-align: center;
+        margin-top: 12px;
+        margin-bottom: 30px;
+    }   
+    .pm {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .pm-p {
+        flex-direction: column;
+        margin-left: 20px;
+        text-align: right;
+        padding-top: 80px;
+    }
+    .se {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .se-p {
+        flex-direction: column;
+        margin-right: 20px;
+        padding-top: 80px;
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        background-color: lightgoldenrodyellow;
+    }
+    .footer-copyright {
+        margin-inline-end: auto;
+    }
+    .footer-paragraph {
+        margin-right: 10px;
+        justify-self: right;
+    }
+}
